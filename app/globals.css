@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #CC0000;
+  --color-primary-foreground: #FFFFFF;
+  --color-accent: #990000;
+  --color-background: #FFFFFF;
+  --color-foreground: #111111;
+  --color-border: #111111;
+  
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-geist-sans), sans-serif;
+  }
+}
+
+.mono {
+  font-family: var(--font-geist-mono), monospace;
+}
